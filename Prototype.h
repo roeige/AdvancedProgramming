@@ -1,0 +1,9 @@
+//
+// Created by roei on 13/02/2022.
+//
+
+#ifndef ADVANCEDPROGRAMMING1_PROTOTYPE_H
+#define ADVANCEDPROGRAMMING1_PROTOTYPE_H
+#include "Shape.h"
+
+#endif //ADVANCEDPROGRAMMING1_PROTOTYPE_H

@@ -4,6 +4,14 @@
 #include "decorator.h"
 #include "facade.h"
 #include "FlyWeight.h"
+#include "Proxy.h"
+#include "FactoryPattern.h"
+#include "AbstractFactory.h"
+#include <functional>
+#include "Prototype.h"
+#include "Builder.h"
+#include "Singelton.h"
+#include "Command.h"
 
 void operateBridgePattern() {
     Device *radio = new Radio(100, 100.00);
@@ -50,11 +58,42 @@ void flyWeight(){
     FlyWeightPatternDemo demo=FlyWeightPatternDemo();
     demo.operate();
 }
+void proxy(){
+    ProxyPatternDemo demo=ProxyPatternDemo();
+    demo.operate();
+}
+void factoryPattern(){
+    FactoryPatternDemo demo=FactoryPatternDemo();
+    demo.operate();
+}
+void abstractFactoryPattern(){
+    AbstractFactoryDemo demo=AbstractFactoryDemo();
+    demo.operate();
+}
+void builder(){
+    LevelDirector levelDirector=LevelDirector();
+    LevelBuilder* mario_level=new MarioLevelBuilder();
+    levelDirector.construct(mario_level);
+    levelDirector.draw();
+    delete(mario_level);
+}
+//void singelton(){
+//    Singelton* obj=&Singelton::getInstance();
+//}
+void command(){
+    CommandPatternDemo demo=CommandPatternDemo();
+    demo.operate();
+}
 int main() {
     operateBridgePattern();
 //   compositeOperate();
     decorate();
     facade();
     flyWeight();
+    proxy();
+    factoryPattern();
+    abstractFactoryPattern();
+    builder();
+    command();
     return 0;
 }
