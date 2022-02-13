@@ -12,6 +12,8 @@
 #include "Builder.h"
 #include "Singelton.h"
 #include "Command.h"
+#include "Iterator.h"
+#include "ObserverPattern.h"
 
 void operateBridgePattern() {
     Device *radio = new Radio(100, 100.00);
@@ -84,6 +86,10 @@ void command(){
     CommandPatternDemo demo=CommandPatternDemo();
     demo.operate();
 }
+void iteratorTest(){
+    TestDemo demo=TestDemo();
+    demo.operate();
+}
 int main() {
     operateBridgePattern();
 //   compositeOperate();
@@ -95,5 +101,6 @@ int main() {
     abstractFactoryPattern();
     builder();
     command();
+    iteratorTest();
     return 0;
 }

@@ -1,7 +1,3 @@
 # ninja log v5
-726	790	1644760949769135052	AdvancedProgramming	d0c7470e92c2bb34
-0	726	1644760949705134595	CMakeFiles/AdvancedProgramming.dir/main.cpp.o	5c5552ace502619f
-1	882	1644764141525457570	CMakeFiles/AdvancedProgramming.dir/main.cpp.o	5c5552ace502619f
-882	940	1644764141585458136	AdvancedProgramming	d0c7470e92c2bb34
-0	776	1644764227946270486	CMakeFiles/AdvancedProgramming.dir/main.cpp.o	5c5552ace502619f
 776	835	1644764228006271049	AdvancedProgramming	d0c7470e92c2bb34
+0	776	1644764227946270486	CMakeFiles/AdvancedProgramming.dir/main.cpp.o	5c5552ace502619f
