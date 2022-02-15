@@ -1,3 +1,16 @@
 # ninja log v5
-776	835	1644764228006271049	AdvancedProgramming	d0c7470e92c2bb34
-0	776	1644764227946270486	CMakeFiles/AdvancedProgramming.dir/main.cpp.o	5c5552ace502619f
+792	857	1644934425102565922	AdvancedProgramming	d0c7470e92c2bb34
+1	792	1644934425038565716	CMakeFiles/AdvancedProgramming.dir/main.cpp.o	5c5552ace502619f
+0	12	1644952819563354120	build.ninja	94008634ef44fe0b
+1	813	1644952846275632558	CMakeFiles/AdvancedProgramming.dir/main.cpp.o	5c5552ace502619f
+1	769	1644953031729560416	CMakeFiles/AdvancedProgramming.dir/main.cpp.o	5c5552ace502619f
+1	800	1644953042033667300	CMakeFiles/AdvancedProgramming.dir/main.cpp.o	5c5552ace502619f
+0	794	1644953068969946612	CMakeFiles/AdvancedProgramming.dir/main.cpp.o	5c5552ace502619f
+1	788	1644953151534801935	CMakeFiles/AdvancedProgramming.dir/main.cpp.o	5c5552ace502619f
+1	800	1644953318668530161	CMakeFiles/AdvancedProgramming.dir/main.cpp.o	5c5552ace502619f
+0	867	1644953349924852971	CMakeFiles/AdvancedProgramming.dir/main.cpp.o	5c5552ace502619f
+1	938	1644953405165423228	CMakeFiles/AdvancedProgramming.dir/main.cpp.o	5c5552ace502619f
+1	794	1644953796608873047	CMakeFiles/AdvancedProgramming.dir/main.cpp.o	5c5552ace502619f
+795	867	1644953796680868797	AdvancedProgramming	d0c7470e92c2bb34
+0	890	1644953815891756927	CMakeFiles/AdvancedProgramming.dir/main.cpp.o	5c5552ace502619f
+890	956	1644953815955753291	AdvancedProgramming	d0c7470e92c2bb34

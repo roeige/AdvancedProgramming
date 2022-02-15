@@ -4,9 +4,9 @@
 
 #ifndef ADVANCEDPROGRAMMING1_FACTORYPATTERN_H
 #define ADVANCEDPROGRAMMING1_FACTORYPATTERN_H
-
+#include <list>
 #include <functional>
-
+using namespace std;
 class Worker{
 public:
     //we should make it private, but for the example.

@@ -1,6 +1,6 @@
 #include <iostream>
 #include "BridgePattern.h"
-#include "composite.h"
+
 #include "decorator.h"
 #include "facade.h"
 #include "FlyWeight.h"
@@ -14,6 +14,7 @@
 #include "Command.h"
 #include "Iterator.h"
 #include "ObserverPattern.h"
+#include "composite.h"
 
 void operateBridgePattern() {
     Device *radio = new Radio(100, 100.00);
@@ -86,13 +87,20 @@ void command(){
     CommandPatternDemo demo=CommandPatternDemo();
     demo.operate();
 }
-void iteratorTest(){
-    TestDemo demo=TestDemo();
+void composite(){
+    Demo demo;
+    demo.operate();
+}
+//void iteratorTest(){
+//    TestDemo demo=TestDemo();
+//    demo.operate();
+//}
+void singelton(){
+    DemoSingleton demo;
     demo.operate();
 }
 int main() {
     operateBridgePattern();
-//   compositeOperate();
     decorate();
     facade();
     flyWeight();
@@ -101,6 +109,8 @@ int main() {
     abstractFactoryPattern();
     builder();
     command();
-    iteratorTest();
+    composite();
+    singelton();
+    //iteratorTest();
     return 0;
 }

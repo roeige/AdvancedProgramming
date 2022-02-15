@@ -4,6 +4,7 @@
 
 #ifndef ADVANCEDPROGRAMMING1_BUILDER_H
 #define ADVANCEDPROGRAMMING1_BUILDER_H
+class Comp;
 typedef struct{
     int x,y;
 }Position;
@@ -85,5 +86,14 @@ public:
             cout<<"Character poistion: ("<<it.position.x<<","<<it.position.y<<" )"<<endl;
         }
     }
+};
+class Comp{
+public:
+    template<class T>
+            bool operator()(const T x,const T y)const{
+                if((x-y)<0)
+                    return true;
+                return false;
+            }
 };
 #endif //ADVANCEDPROGRAMMING1_BUILDER_H

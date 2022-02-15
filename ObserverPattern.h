@@ -6,6 +6,7 @@
 #define ADVANCEDPROGRAMMING1_OBSERVERPATTERN_H
 class Observer;
 class Subject;
+class Comp;
 class Subject{
     vector<Observer*> lst;
     int state;

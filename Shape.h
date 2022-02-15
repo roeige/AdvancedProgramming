@@ -4,7 +4,7 @@
 
 #ifndef ADVANCEDPROGRAMMING1_SHAPE_H
 #define ADVANCEDPROGRAMMING1_SHAPE_H
-
+using namespace std;
 class Shape {
 public:
     virtual void draw() = 0;

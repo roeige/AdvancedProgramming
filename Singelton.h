@@ -4,23 +4,32 @@
 
 #ifndef ADVANCEDPROGRAMMING1_SINGELTON_H
 #define ADVANCEDPROGRAMMING1_SINGELTON_H
+class Singleton{
+public:
+    static Singleton* singleton;
+private:
+    Singleton(){}
+    ~Singleton(){}
+    Singleton& operator=(Singleton&){}
 
-//class Singelton {
-//    float PI;
-//    static Singelton *singelton;
-//
-//    Singelton() {
-//        singelton=new Singelton;
-//    }
-//
-//public:
-//    static Singelton *getInstance() {
-//        if (singelton)
-//            return *singelton;
-//        Singelton();
-//        return this;
-//
-//    }
-//};
+public:
+     static Singleton*& getInstance() {
+        if (Singleton::singleton!=nullptr) {
+            cout<<"singleton already exists!"<<endl;
+            return singleton;
+        }
+        cout<<"New singleton!"<<endl;
+        singleton=new Singleton();
+        return singleton;
+    }
+};
+Singleton* Singleton::singleton=nullptr;
+class DemoSingleton{
+public:
+    void operate(){
+        Singleton* s1=Singleton::getInstance();
+        Singleton* s2=Singleton::getInstance();
+    }
+};
 
 #endif //ADVANCEDPROGRAMMING1_SINGELTON_H
